@@ -8,7 +8,26 @@
 
 <ion-content [fullscreen]="true" class="ion-padding">
 
-<h4>Sistema de Grid</h4>
+  Data Binding (Ligação de dados)<br/>
+  <h4>{{ titulo }}</h4>
+  <h5>Event Biding</h5>
+
+  <ion-button (click)="acao()">Botão</ion-button>
+
+  <ion-item>
+    <ion-label position="floating">Seu Nome: </ion-label>
+    <ion-input (input)="atualiza()"></ion-input>
+  </ion-item>
+  
+  <h4>Property Binding</h4>
+  <ion-img [src]="imagemRamdon"></ion-img>
+
+  <h4>String interpolation </h4>
+  <ion-img src="{{ imagemRamdon }}"></ion-img>
+  <ion-img src="{{ imagemLocal }}"></ion-img>
+
+  
+ <!--<h4>Sistema de Grid</h4>
   <ion-grid>
     <ion-row>
       <ion-col size="8">Conteudo 1</ion-col>
@@ -270,7 +289,7 @@
 <ion-item>
   <ion-label >email: </ion-label>
   <ion-input clearInput type="url" placeholder="Luan Nogueira"></ion-input>
-</ion-item>
+</ion-item> --> 
 
 
 
