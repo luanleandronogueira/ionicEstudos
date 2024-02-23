@@ -7,7 +7,56 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
- 
+  
+  <h4>Sistema de Grid</h4>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="8">Conteudo 1</ion-col>
+      <ion-col size="4">Conteudo 2</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">Conteudo 1</ion-col>
+      <ion-col size="3" offset="3">Conteudo 2</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h4>Grid - alinhamento textos (ion-text-start, ion-text-end, ion-text-center)</h4>
+  <ion-grid>
+    <ion-row >
+      <ion-col class="ion-text-start" size="4"> 1</ion-col>
+      <ion-col class="ion-text-center" size="4"> 2</ion-col>
+      <ion-col class="ion-text-end" size="4"> 3</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h4>Grid - alinhamento vertical </h4>
+  <ion-grid>
+    <ion-row class="ion-align-items-start">
+      <ion-col size="4"> 1</ion-col>
+      <ion-col size="4"> 2</ion-col>
+      <ion-col size="4"> 3 <br/> +<br/> +<br/> +</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row class="ion-align-items-center">
+      <ion-col size="4"> 1</ion-col>
+      <ion-col size="4"> 2</ion-col>
+      <ion-col size="4"> 3 <br/> +<br/> +<br/> +</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row class="ion-align-items-end">
+      <ion-col size="4"> 1</ion-col>
+      <ion-col size="4"> 2</ion-col>
+      <ion-col size="4"> 3 <br/> +<br/> +<br/> +</ion-col>
+    </ion-row>
+  </ion-grid>
+
 
   <h1>Título do App</h1>
   
@@ -222,6 +271,8 @@
   <ion-label >email: </ion-label>
   <ion-input clearInput type="url" placeholder="Luan Nogueira"></ion-input>
 </ion-item>
+
+
 
 </ion-content>
 
