@@ -8,7 +8,22 @@
 
 <ion-content [fullscreen]="true" class="ion-padding">
 
-  Data Binding (Ligação de dados)<br/>
+  <h1>Navegação</h1>
+  
+  <ion-button (click)="abrirBotoes()" expand="full">Botão</ion-button>
+
+  <ion-button (click)="abrirLista()" expand="full">Lista</ion-button>
+
+  <h1>Modelos</h1>
+  <ion-item>
+    <ion-label position="stacked">Digite sua Pesquisa</ion-label>
+    <ion-input [(ngModel)]="pesquisa" type="text"></ion-input>
+  </ion-item>
+  <ion-button (click)="recuperar()" expand="full">Clique</ion-button>
+<br/>
+{{resultado}}
+
+  <!-- Data Binding (Ligação de dados)<br/>
   <h4>{{ titulo }}</h4>
   <h5>Event Biding</h5>
 
@@ -25,9 +40,8 @@
   <h4>String interpolation </h4>
   <ion-img src="{{ imagemRamdon }}"></ion-img>
   <ion-img src="{{ imagemLocal }}"></ion-img>
-
   
- <!--<h4>Sistema de Grid</h4>
+ <h4>Sistema de Grid</h4>
   <ion-grid>
     <ion-row>
       <ion-col size="8">Conteudo 1</ion-col>
